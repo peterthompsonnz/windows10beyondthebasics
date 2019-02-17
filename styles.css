@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 21px;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    min-height: auto;
+}
+
+.featured-image img{
+    box-shadow: 2px 2px 4px #777;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 1em 0.75em 3em 0.75em;
+    max-width: 768px;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    font-family: "Times New Roman, Georgia, serif;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h2:first-of-type {
+	margin-top: 2em;
+}
+
+p {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+ol, ul {
+	padding-left: 1em;
+}
+
+li {
+    line-height: 1.6;
+    margin-bottom: 0.5em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+heading {
+    display: block;
+    background-color: #222;
+    padding: 5px 0;
+}
+
+.title {
+    margin: 0 auto;
+    padding-left: 0.75em;
+    max-width: 768px;
+    display: flex;
+}
+
+heading .title h1 {
+    color: #fff;
+    margin: 15px 0 0 15px;
+    padding: 0;    
+}
+
+heading .title img {
+    border-radius: 5px;
+    min-width: 60px;
+}
+
+.divider {
+    height: 1px;
+    border-top: 1px solid #ccc;
+    margin: 2.5em 0;
+}
+
+.featured-image {
+    margin-left: 0;
+    max-width: 680px;
+    border: 1px solid #777;
+    padding: 20px;
+    border-radius: 5px;
+    background: #efefef;
+}
+
+.featured-image figcaption {
+    margin: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        font-size: 17px;
+    }
+
+    heading .title h1 {
+        font-size: .1.85em;        
+    }
+    
+    h2 {
+    	font-size: 1.5em;
+    }
+    
+    h2:first-of-type {
+		margin-top: 1em;
+	}
+    
+    heading .title img, .featured-image {
+    	display: none;
+	}
+
+    figure {
+        padding: 10px;
+    }
+    
+    main {	   
+	    padding: 0.75em 0.75em 2em 0.75em;	    
+	}
+}
